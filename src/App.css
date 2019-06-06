@@ -32,7 +32,9 @@
   }
 }
 
-
+img{
+  width: 100% !important;
+}
 
 body {
   margin: 0;
@@ -61,10 +63,10 @@ a {
 }
 
 .login-wrap {
-  width: 500px;
+  width: 100%;
   height: 100%;
-  margin-top: 15px;
-  padding-bottom: 40px;
+  margin: 15px 10% 0px 0%;
+  padding-bottom: 30px;
   border-radius: 10px;
   background-image: radial-gradient(closest-side ellipse at center, rgb(123, 176, 180), rgb(51, 100, 96));
 }
@@ -92,15 +94,13 @@ a {
   display: none;
 }
 
-.login-html .tab, .login-form .group .login-form .group .button {
-  text-transform: uppercase;
-}
+
 
 .login-html .tab {
   font-size: 18px;
   padding-bottom: 5px;
-  /* margin: 0 15px 10px 0px; */
   margin-left: 10px;
+  cursor: pointer;
   display: inline-block;
   border-bottom: 2px solid transparent;
   color: rgb(243, 234, 234); 
@@ -128,10 +128,13 @@ a {
 .login-form .group {
   margin-bottom: 15px;
 }
-.login-form .group .label, .login-form .group .input, .login-form .group .button {
+.login-form .group .label, .login-form .group .input, .login-form .group {
   width: 100%;
-  color: rgb(181, 189, 192);
+  color: rgb(39, 48, 51);
   display: block;
+}
+.button {
+    color: #c8c8c8;
 }
 
 .login-form .group .input, .login-form .group .button {
@@ -161,6 +164,10 @@ a {
   margin-left: 10%;
 }
 
+.login-html .button:hover {
+  color: #ffffff;
+  background-color: #44afbd!important;
+}
 
 .login-form .group .check:checked+label {
   color: #fff;
@@ -188,4 +195,10 @@ h4 {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 30px;
   text-decoration-line: underline;
+}
+#btn-seconnecter {
+  margin-top: 100px;
+}
+#form-seconnecter {
+  margin-top: 50px;
 }
